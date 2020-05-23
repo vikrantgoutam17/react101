@@ -1,0 +1,26 @@
+{
+  "name": "react101",
+  "version": "1.0.0",
+  "description": "just learning basic react",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,jsx,json,html}\"",
+    "lint": "eslint --quiet \"./**/*.{js,jsx,json}\"",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikrantgoutam17/react101.git"
+  },
+  "author": "vikrant kumar goutam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikrantgoutam17/react101/issues"
+  },
+  "homepage": "https://github.com/vikrantgoutam17/react101#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5"
+  }
+}
