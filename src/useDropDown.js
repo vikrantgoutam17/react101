@@ -30,6 +30,6 @@ const useDropDown = (
       </select>
     </label>
   );
-  return [state, DropDown];
+  return [state, DropDown, setState];
 };
 export default useDropDown;
