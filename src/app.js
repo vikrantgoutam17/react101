@@ -1,7 +1,9 @@
 import React from 'react';
+import { Router, Link } from '@reach/router';
 import { render } from 'react-dom';
 //import Pet from './Pet';
 import SearchParams from './SearchPrams';
+import Details from './Details';
 
 const App = () => {
   // return React.createElement('div', {}, [
@@ -33,10 +35,12 @@ const App = () => {
   //   }),
   // ]);
   return (
-    <div>
-      <h1>Adopt me!</h1>
-
-      {/* <Pet
+    <React.StrictMode>
+      <div>
+        <header>
+          <Link to="/">Adopt me!</Link>
+        </header>
+        {/* <Pet
         name="Raffel"
         animal="Dog"
         breed="Bull-dog"
@@ -51,8 +55,12 @@ const App = () => {
         animal="Cat"
         breed="Mixed"
       ></Pet> */}
-      <SearchParams />
-    </div>
+        <Router>
+          <SearchParams path="/" />
+          <Details path="/details/:id" />
+        </Router>
+      </div>
+    </React.StrictMode>
   );
 };
 render(<App />, document.getElementById('root'));
